@@ -7,11 +7,18 @@ import EventoTech from './images/Evento.jpeg'
 import Sorteador from './images/Sorteador.jpeg'
 import Restaurante from './images/Restaurante.jpeg'
 import Ajax from './images/Ajax.jpeg'
+import GastroSpace from './images/gastrospace.png'
 
 const ListagemProjetos = () => {
     
     return (
         <ContainerListagemPr>
+                <li>
+                    <ImagemProjeto src={GastroSpace} alt="" />
+                    <NomeProjeto>GastroSpace</NomeProjeto>
+                    <p><RecursosUtilizados>Utilização de:</RecursosUtilizados> Requisições Ajax, ReactJs, HTML5, CSS, React-router-dom, Yup, Formik, Styled-Components e React-redux</p>
+                    <ParagrafoLink><Link href="https://gastrospace.vercel.app/">Clique aqui para acessar.</Link></ParagrafoLink>
+                </li>
                 <li>
                     <ImagemProjeto src={ToDoReact} alt="" />
                     <NomeProjeto>Lista de Tarefas React</NomeProjeto>
