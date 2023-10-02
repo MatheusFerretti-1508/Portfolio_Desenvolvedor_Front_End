@@ -10,12 +10,8 @@ import Ajax from './images/Ajax.jpeg'
 import GastroSpace from './images/gastrospace.png'
 import Eplay from  './images/eplay.jpeg'
 import Macash from  './images/macash.jpeg'
-import { useState } from "react"
-import Descricao from "../Descricao"
 
 const ListagemProjetos = () => {
-
-    const [teste, setTeste] = useState(false)
     
     return (
         <ContainerListagemPr>
