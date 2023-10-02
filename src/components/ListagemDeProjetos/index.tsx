@@ -20,8 +20,7 @@ const ListagemProjetos = () => {
     return (
         <ContainerListagemPr>
                 <li>
-                    <div style={{position: 'relative'}} onMouseEnter={() => setTeste(true)} onMouseOut={() => setTeste(false)}><ImagemProjeto src={Eplay} alt=""/>
-                        {teste ? (<div onMouseEnter={() => setTeste(true)} onMouseOut={() => setTeste(false)}><Descricao/></div>) : console.log('b')}</div>
+                    <ImagemProjeto src={Eplay} alt=""/>
                     <NomeProjeto>Eplay</NomeProjeto>
                     <p><RecursosUtilizados>Utilização de:</RecursosUtilizados> Requisições Ajax, Post/get, ReactJs, HTML5, CSS, React-router-dom, Yup, Formik, Styled-Components e React-redux</p>
                     <ParagrafoLink><Link href="https://eplay-one.vercel.app/">Clique aqui para acessar.</Link></ParagrafoLink>
