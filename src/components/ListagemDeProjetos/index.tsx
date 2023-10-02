@@ -9,16 +9,28 @@ import Restaurante from './images/Restaurante.jpeg'
 import Ajax from './images/Ajax.jpeg'
 import GastroSpace from './images/gastrospace.png'
 import Eplay from  './images/eplay.jpeg'
+import Macash from  './images/macash.jpeg'
+import { useState } from "react"
+import Descricao from "../Descricao"
 
 const ListagemProjetos = () => {
+
+    const [teste, setTeste] = useState(false)
     
     return (
         <ContainerListagemPr>
                 <li>
-                    <ImagemProjeto src={Eplay} alt="" />
+                    <div style={{position: 'relative'}} onMouseEnter={() => setTeste(true)} onMouseOut={() => setTeste(false)}><ImagemProjeto src={Eplay} alt=""/>
+                        {teste ? (<div onMouseEnter={() => setTeste(true)} onMouseOut={() => setTeste(false)}><Descricao/></div>) : console.log('b')}</div>
                     <NomeProjeto>Eplay</NomeProjeto>
                     <p><RecursosUtilizados>Utilização de:</RecursosUtilizados> Requisições Ajax, Post/get, ReactJs, HTML5, CSS, React-router-dom, Yup, Formik, Styled-Components e React-redux</p>
                     <ParagrafoLink><Link href="https://eplay-one.vercel.app/">Clique aqui para acessar.</Link></ParagrafoLink>
+                </li>
+                <li>
+                    <ImagemProjeto src={Macash} alt="" />
+                    <NomeProjeto>Macash</NomeProjeto>
+                    <p><RecursosUtilizados>Utilização de:</RecursosUtilizados> ReactJs, HTML5, CSS, React-router-dom, Styled-Components e React-redux</p>
+                    <ParagrafoLink><Link href="https://macash.vercel.app/">Clique aqui para acessar.</Link></ParagrafoLink>
                 </li>
                 <li>
                     <ImagemProjeto src={GastroSpace} alt="" />

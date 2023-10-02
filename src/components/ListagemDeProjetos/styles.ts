@@ -25,11 +25,20 @@ export const ImagemProjeto = styled.img`
     width: 400px;
     border: 2px solid #000;
     border-radius: 8px;
+    position: relative;
 
     @media (max-width: 767px) {
         height: 200px;
         width: 300px;   
-    }
+    }   
+/* 
+    &:hover {
+        content: 'oiola';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.73);
+    } */
 `
 
 export const NomeProjeto = styled.h4`
